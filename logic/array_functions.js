@@ -1,4 +1,3 @@
-
 function array_average (a) {
   let sum = 0;
   for (let i = 0; i < a.length; i++) {
@@ -36,3 +35,4 @@ function array_map (a, transform_function) {
   }
   return result;
 }
+

@@ -17,10 +17,9 @@ const structure_containers = render_structure();
 render_header(structure_containers.header);
 
 // Här ska resten av render_funktionerna anropas (listan av komponenter finns ovan).
-render_city_filters (structure_containers.render_city_filters)
-render_subject_filters (structure_containers.render_subject_filters)
-rennder_level_filters (structure_containers.rennder_level_filters)
-render_language_filters (structure_containers.render_language_filters)
-render_language_filters (structure_containers.render_language_filters)
-render_sorter_list (structure_containers.render_sorter_list)
-render_programme_list (structure_containers.render_programme_list)
+render_city_filters (structure_containers.left)
+render_subject_filters (structure_containers.right_top)
+rennder_level_filters (structure_containers.right_top)
+render_language_filters (structure_containers.right_top)
+render_sorter_list (structure_containers.right_top)
+render_programme_list (structure_containers.right_bottom, PROGRAMMES)
