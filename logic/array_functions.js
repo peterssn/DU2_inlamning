@@ -12,10 +12,16 @@ function array_random_element (a) {
 }
 
 function array_find (a, test_function) {
+  for (let i = 0; i < a.length; i++) {
+    if (test_function(a[i])) {
+      return a[i];
+    }
+  }
+}
   // Loopar igenom arrayen a och anropar funktionen test_function med varje element i a som argument.
   // Loopen (och funktionen) avbryts när ett test_function returnerar true.
   // Funktionen returnerar elementet i a för vilken test_function returnerade true.
-}
+
 
 function array_filter (a, test_function) {
   // Loopar igenom arrayen a och anropar funktionen test_function med varje element i a som argument.
